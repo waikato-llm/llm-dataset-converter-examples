@@ -1,6 +1,6 @@
 The [llm-dataset-converter](https://github.com/waikato-llm/llm-dataset-converter) 
-library (and its dependent libraries) can be used for converting datasets from one format 
-into another. It has support for the following domains:
+library (and its dependent libraries) can be used for converting **Large Language Model (LLM) datasets** 
+from one format into another. It has support for the following domains:
 
 * Pretrain
 * Supervised
