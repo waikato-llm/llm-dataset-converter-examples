@@ -26,6 +26,7 @@ nav:
         - MS Word (doc): doc.md
         - MS Word (docx): docx.md
         - Faster whisper: faster_whisper.md
+        - gitingest: gitingest.md
         - Google: google.md
         - HTML: html.md
         - OpenAI: openai.md

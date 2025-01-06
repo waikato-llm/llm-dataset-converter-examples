@@ -29,6 +29,7 @@ On this website you can find examples for:
 Examples for the additional libraries:
 
 * [Faster whisper](faster_whisper.md)
+* [gitingest](gitingest.md)
 * [Google](google.md)
 * [HTML](html.md)
 * [MS Word (doc)](doc.md)
