@@ -10,14 +10,14 @@
       
       
       
-        <link rel="canonical" href="https://waikato-llm.github.io/llm-dataset-converter-examples/processing_multiple_files/">
+        <link rel="canonical" href="https://waikato-llm.github.io/llm-dataset-converter-examples/gitingest/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Processing multiple files - llm-dataset-converter examples</title>
+        <title>gitingest - llm-dataset-converter examples</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#requirements" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Processing multiple files
+              gitingest
             
           </span>
         </div>
@@ -217,14 +222,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -273,19 +276,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../processing_multiple_files/" class="md-nav__link">
         Processing multiple files
       </a>
-      
     </li>
   
 
@@ -359,12 +354,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -427,11 +424,75 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../gitingest/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          gitingest
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         gitingest
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    Plugins
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#converting-repository-clone-into-pretrain-text" class="md-nav__link">
+    Converting repository clone into pretrain text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converting-remote-repositories-into-pretrain-text" class="md-nav__link">
+    Converting remote repositories into pretrain text
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -531,6 +592,48 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    Plugins
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#converting-repository-clone-into-pretrain-text" class="md-nav__link">
+    Converting repository clone into pretrain text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converting-remote-repositories-into-pretrain-text" class="md-nav__link">
+    Converting remote repositories into pretrain text
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -543,34 +646,45 @@
                 
                   
 
-  <a href="https://github.com/waikato-llm/llm-dataset-converter-examples/edit/master/docs/processing_multiple_files.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/waikato-llm/llm-dataset-converter-examples/edit/master/docs/gitingest.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>Processing multiple files</h1>
+  <h1>gitingest</h1>
 
-<p>Provided that the reader supports, you can also process multiple files, one
-after the other. For that you either specify them explicitly (multiple 
-arguments to the <code>--input</code> option) or use a glob syntax (e.g., <code>--input "*.json"</code>).
-For the latter, you should surround the argument with double quotes to avoid
-the shell expanding the names automatically.</p>
-<p>If you have a lot of files, it will be more efficient to store these in text
-files (with one file per line) and pass these to the reader using the 
-<code>--input_list</code> option (assuming that the reader supports this). Such file
-lists can be generated with the <code>llm-find</code> tool. See <a href="../locating_files/">Locating files</a> 
-for examples.</p>
-<p>As for specifying the output, you simply specify the output directory. An output
-file name gets automatically generated from the name of the current input file
-that is being processed.</p>
-<p>If you want to compress the output files, you need to specify your preferred
-compression format via the global <code>-c/--compression</code> option of the <code>llm-convert</code>
-tool. By default, no compression is used.</p>
-<p>Please note, that when using a <em>stream writer</em> (e.g., for text or jsonlines 
-output) in conjunction with an output directory, each record will be stored 
-in a separate file. In order to transfer all the records into a single file, 
-you have to explicitly specify that file as output.</p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">#</a></h2>
+<p>Requires the <a href="https://github.com/waikato-llm/ldc-gitingest">ldc-google</a> library.</p>
+<h2 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link">#</a></h2>
+<h3 id="converting-repository-clone-into-pretrain-text">Converting repository clone into pretrain text<a class="headerlink" href="#converting-repository-clone-into-pretrain-text" title="Permanent link">#</a></h3>
+<p>The following converts only Python files of a local repository clone into
+a pretrain text file:</p>
+<pre><code class="language-bash">ldc-convert \
+  -l INFO \
+  from-gitingest-pt \
+    -l INFO \
+    --input &quot;/some/where/local/myrepo&quot; \
+    --include_pattern &quot;*.py&quot; \
+  to-txt-pt \
+    -l INFO \
+    --output &quot;./output/myrepo.txt&quot;
+</code></pre>
+<h3 id="converting-remote-repositories-into-pretrain-text">Converting remote repositories into pretrain text<a class="headerlink" href="#converting-remote-repositories-into-pretrain-text" title="Permanent link">#</a></h3>
+<p>The following converts all files apart from Markdown and reStructured Text ones 
+of two remote repositories into pretrain text files:</p>
+<pre><code class="language-bash">ldc-convert \
+  -l INFO \
+  from-gitingest-pt \
+    -l INFO \
+    --input \
+      &quot;https://github.com/fracpete/python-weka-wrapper3&quot; \
+      &quot;https://github.com/fracpete/sklearn-weka-plugin&quot; \
+    --exclude_pattern &quot;*.md&quot; &quot;*.rst&quot; \
+  to-txt-pt \
+    -l INFO \
+    --output &quot;./output/&quot;
+</code></pre>
 
 
 
@@ -591,7 +705,7 @@ you have to explicitly specify that file as output.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../general_usage/" class="md-footer__link md-footer__link--prev" aria-label="Previous: General usage" rel="prev">
+        <a href="../faster_whisper/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Faster whisper" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -600,20 +714,20 @@ you have to explicitly specify that file as output.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              General usage
+              Faster whisper
             </div>
           </div>
         </a>
       
       
         
-        <a href="../locating_files/" class="md-footer__link md-footer__link--next" aria-label="Next: Locating files" rel="next">
+        <a href="../google/" class="md-footer__link md-footer__link--next" aria-label="Next: Google" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Locating files
+              Google
             </div>
           </div>
           <div class="md-footer__button md-icon">
